@@ -2,12 +2,15 @@ import "../module/HeaderTop.css";
 
 import { foods, menuTop1 } from "../../data/localdata";
 import HammburgerMenu from "../module/HammburgerMenu";
+import searchBar from "../../assets/images/search1.png";
 
 // pic logo
 import logo from "../../assets/images/logo.png";
 import menu from "../../assets/svgs/hamburgerMenu.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
+import imgsearch2 from "../../assets/images/search2.png";
 
 function HeaderTop({ open, setOpen }) {
   const [searchQuery, setSearchQuery] = useState("");
@@ -61,18 +64,14 @@ function HeaderTop({ open, setOpen }) {
       </div>
 
       <div className="searchBar">
-        <img src="/src/assets/images/search1.png" alt="searchLogo" />
+        <img src={searchBar} alt="searchLogo" />
         <input
           type="text"
           placeholder="جستوجو کنید..."
           value={searchQuery}
           onChange={handleSearchChange}
         />
-        <img
-          className="imgsearch2"
-          src="/src/assets/images/search2.png"
-          alt="searrchLogo2"
-        />
+        <img className="imgsearch2" src={imgsearch2} alt="searrchLogo2" />
         {isResultsVisible && filteredFoods.length > 0 && (
           <div className="searchResults">
             {filteredFoods.map((food) => (

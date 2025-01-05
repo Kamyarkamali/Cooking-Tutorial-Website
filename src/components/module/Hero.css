@@ -35,20 +35,20 @@
 }
 
 .container2 button {
-  width: 20vw; /* تغییر به واحد نسبی */
+  width: 20vw;
   background-color: #748770;
   color: #fff;
   border: none;
-  padding: 1vw 2vw; /* تغییر به واحد نسبی */
+  padding: 1vw 2vw;
   border-radius: 30px;
-  font-size: 2vw; /* تغییر به واحد نسبی */
+  font-size: 2vw;
   cursor: pointer;
-  margin-top: 3vw; /* تغییر به واحد نسبی */
+  margin-top: 3vw;
 }
 
 .bg {
-  width: 40vw; /* تغییر به واحد نسبی */
-  height: 40vw; /* تغییر به واحد نسبی */
+  width: 40vw;
+  height: 40vw;
 }
 
 .containerhero {
@@ -59,7 +59,7 @@
   position: absolute;
   top: 20%;
   right: 10%;
-  width: 25vw; /* تغییر به واحد نسبی */
+  width: 25vw;
   background-color: #c5d5bd !important;
   border: none;
   padding: 0;
@@ -78,7 +78,7 @@
 }
 
 .bgborder img {
-  width: 28vw; /* تغییر به واحد نسبی */
+  width: 28vw;
   background-color: transparent;
 }
 
@@ -92,7 +92,7 @@
 
 .frishimg img {
   background-color: transparent;
-  width: 20vw; /* تغییر به واحد نسبی */
+  width: 20vw;
 }
 
 .circle {
@@ -104,7 +104,7 @@
 
 .circle img {
   background-color: transparent;
-  width: 2vw; /* تغییر به واحد نسبی */
+  width: 2vw;
 }
 
 .circle2 {
@@ -116,20 +116,20 @@
 
 .circle2 img {
   background-color: transparent;
-  width: 2vw; /* تغییر به واحد نسبی */
+  width: 2vw;
 }
 
 .leftPng {
   background-color: transparent;
   position: absolute;
-  top: -3vw; /* تغییر به واحد نسبی */
+  top: -3vw;
   left: 90%;
   animation: float 3s ease-in-out infinite;
 }
 
 .leftPng img {
   background-color: transparent;
-  width: 3vw; /* تغییر به واحد نسبی */
+  width: 3vw;
 }
 
 .cricle3 {
@@ -141,21 +141,21 @@
 
 .cricle3 img {
   background-color: transparent;
-  width: 2vw; /* تغییر به واحد نسبی */
+  width: 2vw;
   animation: float 3s ease-in-out infinite;
 }
 
 .cricle4 {
   position: absolute;
   top: 10%;
-  left: -5vw; /* تغییر به واحد نسبی */
+  left: -5vw;
   background-color: transparent;
   animation: float 3s ease-in-out infinite;
 }
 
 .cricle4 img {
   background-color: transparent;
-  width: 2vw; /* تغییر به واحد نسبی */
+  width: 2vw;
 }
 
 @keyframes float {
@@ -184,22 +184,25 @@
   }
 
   .bg {
-    width: 70vw; /* تغییر به واحد نسبی */
-    height: 73vw; /* تغییر به واحد نسبی */
+    width: 70vw;
+    height: 73vw;
   }
 
   .pizza {
-    width: 50vw; /* تغییر به واحد نسبی */
+    width: 50vw;
     top: 16%;
     right: 0;
   }
 
   .bgborder img {
-    width: 50vw; /* تغییر به واحد نسبی */
+    position: absolute;
+    width: 50vw;
+    right: -20px;
+    top: -10px;
   }
 
   .frishimg img {
-    width: 35vw; /* تغییر به واحد نسبی */
+    width: 35vw;
     right: 45%;
     bottom: 8%;
     transform: rotate(0deg);
@@ -213,23 +216,23 @@
   }
 
   .container2 h3 {
-    font-size: 6vw; /* تغییر به واحد نسبی */
+    font-size: 6vw;
   }
 
   .container2 p {
-    font-size: 5vw; /* تغییر به واحد نسبی */
+    font-size: 5vw;
   }
 
   .container2 button {
-    width: 50vw; /* تغییر به واحد نسبی */
-    font-size: 4vw; /* تغییر به واحد نسبی */
-    padding: 5vw 8vw; /* تغییر به واحد نسبی */
-    margin-top: 6vw; /* تغییر به واحد نسبی */
+    width: 50vw;
+    font-size: 4vw;
+    padding: 5vw 8vw;
+    margin-top: 6vw;
   }
 
   .leftPng img {
-    width: 6vw; /* تغییر به واحد نسبی */
-    top: -5vw; /* تغییر به واحد نسبی */
+    width: 6vw;
+    top: -5vw;
     left: 85%;
   }
 }
@@ -239,7 +242,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative; /* اضافه کردن موقعیت رلیتیو برای محاذات بهتر */
+    position: relative;
   }
 
   .bg {
@@ -250,13 +253,13 @@
   .pizza {
     width: 180px;
     top: 12%;
-    right: 0%; /* به سمت راست میچسبد */
-    position: absolute; /* موقعیت‌دهی به صورت مطلق */
+    right: 0%;
+    position: absolute;
   }
 
   .bgborder {
     position: absolute;
-    right: 0%; /* به سمت راست میچسبد */
+    right: 0%;
     top: 16%;
   }
 
@@ -296,6 +299,6 @@
   .leftPng img {
     width: 20px;
     top: -12px;
-    left: 85%; /* به سمت راست میچسبد */
+    left: 85%;
   }
 }
