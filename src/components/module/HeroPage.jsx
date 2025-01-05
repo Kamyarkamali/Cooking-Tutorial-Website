@@ -47,7 +47,7 @@ function HeroPage() {
         </div>
       </div>
 
-      <div>
+      <div className="container3">
         <img className="frishing3" src={frishing3} alt="/" />
       </div>
     </div>
