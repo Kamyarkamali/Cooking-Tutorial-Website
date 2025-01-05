@@ -5,7 +5,7 @@ import view from "../../assets/images/view_709612 1.png";
 import arrow from "../../assets/images/up-arrow_7699468 1.png";
 import { Link, useLocation } from "react-router-dom";
 
-function Toutorial() {
+function Toturial1() {
   const location = useLocation();
   return (
     <>
@@ -51,4 +51,4 @@ function Toutorial() {
   );
 }
 
-export default Toutorial;
+export default Toturial1;

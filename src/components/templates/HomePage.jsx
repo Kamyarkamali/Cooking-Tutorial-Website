@@ -1,14 +1,14 @@
 import HeroPage from "../module/HeroPage";
 import HowCook from "../module/HowCook";
-import Toutorial from "../module/toturial1";
-import Toutorial2 from "../module/Toturial2";
+import Toturial1 from "../module/Toturial1";
+import Toturial2 from "../module/Toturial2";
 
 function HomePage() {
   return (
     <div>
       <HeroPage />
-      <Toutorial />
-      <Toutorial2 />
+      <Toturial1 />
+      <Toturial2 />
       <HowCook />
     </div>
   );
