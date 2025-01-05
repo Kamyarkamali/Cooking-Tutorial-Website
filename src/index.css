@@ -1,0 +1,19 @@
+@font-face {
+  font-family: iranYekan;
+  src: url("/src/assets/fonts/woff2/YekanBakhFaNum-Regular.woff2");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fdf7f4;
+  font-family: iranYekan;
+}
+
+a {
+  text-decoration: none;
+}
+.mainChildren {
+  height: fit-content;
+}

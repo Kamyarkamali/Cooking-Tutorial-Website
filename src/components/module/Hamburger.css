@@ -1,0 +1,87 @@
+.hamburgermenu {
+  border-left: 0.3px solid gray;
+  z-index: 1000;
+  height: 100vh;
+  background-color: #fdf7f4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  transition: all 0.4s ease-in;
+}
+
+.closes {
+  cursor: pointer;
+}
+
+.container1 {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.4s ease-in;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}
+
+.menutop2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.link:hover {
+  margin: 5px;
+}
+
+.menutop2 li {
+  cursor: pointer;
+  color: red;
+}
+
+.menutop2 a {
+  text-decoration: none;
+  border-bottom: 1px solid rgb(91, 86, 86);
+  width: 100px;
+}
+
+.loginbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.loginbtn button {
+  border: none;
+  width: 150px;
+  margin-top: 4rem;
+  background-color: rgb(72, 72, 207);
+  color: #fdf7f4;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.611);
+  z-index: 20000;
+  transition: all 0.4s ease-in;
+}

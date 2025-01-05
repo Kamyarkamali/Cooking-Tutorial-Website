@@ -1,0 +1,276 @@
+/* تنظیمات کلی */
+.food-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.detailse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.detailse img {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.detailse h4 {
+  color: #685752;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* جعبه مواد لازم */
+.detailse2 {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 446px;
+  padding: 20px;
+  background-color: #8eb486;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.absolotposition {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.div1 img {
+  width: 30px;
+  height: 30px;
+}
+
+.div1 p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.descCook {
+  margin-top: 2rem;
+}
+
+.descCook h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.descCook ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.descCook ul li {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.food-detail {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.food-detail img {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.ingredients-table {
+  margin-top: 20px;
+  width: 100%;
+  /* max-width: 600px; */
+}
+
+.ingredients-table h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #8eb486;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+  padding: 8px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+}
+
+.changal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.changal p {
+  color: #685752;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.changal img {
+  width: 30px;
+  height: 30px;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  line-height: 40px;
+}
+
+.recipe p {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  tbody td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+  }
+}
+
+.recipe-container {
+  position: relative; /* تغییر موقعیت به نسبی */
+  margin: 50px auto 0; /* فاصله از بالا و مرکز قرار دادن */
+  width: 60%; /* عرض بیشتر در دسکتاپ */
+  max-width: 800px; /* حداکثر عرض برای زیبایی */
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #f8f9fa,
+    #e9ecef
+  ); /* پس‌زمینه با گرادینت ملایم */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای برجسته‌کردن */
+  border-radius: 12px; /* لبه‌های گرد */
+  box-sizing: border-box;
+}
+
+.recipe-title h3 {
+  font-size: 2rem; /* افزایش سایز فونت برای دسکتاپ */
+  text-align: center;
+  color: #495057; /* رنگ تیره‌تر برای عنوان */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #6c757d; /* خط زیرین برای تاکید */
+  padding-bottom: 10px;
+}
+
+.recipe-steps p {
+  font-size: 1.1rem; /* بزرگ‌تر کردن متن برای دسکتاپ */
+  color: #343a40; /* متن تیره‌تر */
+  line-height: 1.8;
+  margin-bottom: 15px;
+  padding: 12px;
+  background-color: #ffffff; /* پس‌زمینه سفید برای متن */
+  border-radius: 8px; /* گوشه‌های گرد متن */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* سایه متن */
+}
+
+.recipe-steps p:nth-child(odd) {
+  background-color: #f1f3f5; /* رنگ متفاوت برای خطوط فرد */
+}
+
+@media (max-width: 768px) {
+  .recipe-container {
+    width: 90%; /* کاهش عرض در موبایل */
+    max-width: 100%; /* حذف محدودیت عرض */
+    margin: 20px auto; /* فاصله در بالا و پایین */
+  }
+
+  .recipe-title h3 {
+    font-size: 1.5rem; /* کوچک‌تر کردن عنوان */
+  }
+
+  .recipe-steps p {
+    font-size: 1rem; /* کوچک‌تر کردن متن */
+    padding: 10px; /* کاهش فاصله‌ها */
+  }
+}

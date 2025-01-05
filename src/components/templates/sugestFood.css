@@ -1,0 +1,363 @@
+/* Overall container styles */
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Top Section with images and text */
+.containersugest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.containersugest h3 {
+  color: #685752;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.containersugest img {
+  width: 60px;
+  height: auto;
+}
+
+/* Text section below the images */
+.textfood {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.textfood p {
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+}
+
+/* Input section */
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.nested {
+  width: 100%;
+  max-width: 400px;
+}
+
+.nested input {
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: #8eb486;
+  border-radius: 20px;
+  outline: none;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.nested input::placeholder {
+  font-weight: bold;
+  color: rgb(53, 42, 42);
+}
+
+/* Search prompt section */
+.searchfood {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchfood h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Food items grid section */
+.started {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+.started img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.started p {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .containersugest h3 {
+    font-size: 1.8rem;
+  }
+
+  .started {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .containersugest h3 {
+    font-size: 1.5rem;
+  }
+
+  .started {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .food-item {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containersugest {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .started {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .food-item {
+    padding: 5px;
+  }
+
+  .started img {
+    width: 50px;
+  }
+
+  .textfood p {
+    font-size: 1rem;
+  }
+
+  .inputs input {
+    font-size: 0.9rem;
+  }
+
+  .searchfood h3 {
+    font-size: 1rem;
+  }
+}
+
+/* General container */
+.container {
+  width: 100%;
+  margin-bottom: 100px; /* Adding space at the bottom to prevent overlap with buttons */
+}
+
+/* Suggest section */
+.containersugest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.containersugest h3 {
+  color: #685752;
+  font-size: 30px;
+}
+
+.containersugest img {
+  width: 60px;
+}
+
+/* Text section */
+.textfood {
+  display: flex;
+  justify-content: center;
+}
+
+.textfood p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Input section */
+.inputs {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.inputs input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: #8eb486;
+  border-radius: 20px;
+  outline: none;
+  padding: 15px;
+}
+
+.inputs input::placeholder {
+  font-weight: bold;
+  color: rgb(53, 42, 42);
+}
+
+.nested {
+  background-color: #8eb486;
+  width: 400px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.nested img {
+  width: 130px;
+}
+
+/* Search food section */
+.searchfood {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Started images section */
+.started {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.started img {
+  width: 40px;
+}
+
+/* Button section at the bottom */
+.buttoncook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttoncook p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.buttoncook div {
+  display: flex;
+  gap: 10px;
+}
+
+.buttoncook button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #8eb486;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttoncook button:hover {
+  background-color: #6f9443;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .started {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .buttoncook p {
+    font-size: 1rem;
+  }
+
+  .buttoncook button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .started {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .buttoncook p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .buttoncook div {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .buttoncook button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .started {
+    grid-template-columns: 1fr;
+  }
+
+  .buttoncook p {
+    font-size: 0.9rem;
+  }
+
+  .buttoncook button {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+}

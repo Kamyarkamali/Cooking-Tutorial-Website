@@ -1,0 +1,167 @@
+.Toutorialcontaier {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+  padding: 10px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h5 {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+
+.Toutorialcontaier a {
+  color: black;
+}
+
+.card img {
+  width: 195px;
+  object-fit: cover;
+}
+.folder {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: #ffffff;
+}
+
+.folder p {
+  font-size: 11px;
+  background-color: #ffffff;
+}
+
+.folder img {
+  width: 13px;
+}
+
+.view img {
+  width: 11px;
+  object-fit: cover;
+}
+
+.view {
+  display: flex;
+  gap: 10px;
+  background-color: #ffffff;
+}
+
+.btnview {
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.btnview button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 12px;
+}
+
+.btnview button:hover {
+  background-color: #5b4d49;
+  color: #fff;
+}
+
+.pageView {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 73px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow img {
+  width: 30px;
+}
+
+@media (max-width: 1400px) {
+  .Toutorialcontaier {
+    grid-template-columns: repeat(4, 1fr); /* 4 ستون برای صفحه‌های بزرگ‌تر */
+  }
+}
+
+@media (max-width: 1200px) {
+  .Toutorialcontaier {
+    grid-template-columns: repeat(3, 1fr); /* 3 ستون برای صفحه‌های متوسط */
+  }
+}
+
+@media (max-width: 992px) {
+  .Toutorialcontaier {
+    grid-template-columns: repeat(2, 1fr); /* 2 ستون برای تبلت‌ها */
+  }
+  .card {
+    width: fit-content;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .Toutorialcontaier {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .card {
+    width: fit-content;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .Toutorialcontaier {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    padding-right: 0;
+    padding-left: 0;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    justify-self: center;
+    margin: auto;
+    width: fit-content;
+    margin-top: 2rem;
+  }
+}
