@@ -113,7 +113,7 @@
 .ingredients-table {
   margin-top: 20px;
   width: 100%;
-  /* max-width: 600px; */
+  max-width: 800px;
 }
 
 .ingredients-table h3 {
@@ -219,58 +219,58 @@ tbody tr:nth-child(even) {
 }
 
 .recipe-container {
-  position: relative; /* تغییر موقعیت به نسبی */
-  margin: 50px auto 0; /* فاصله از بالا و مرکز قرار دادن */
-  width: 60%; /* عرض بیشتر در دسکتاپ */
-  max-width: 800px; /* حداکثر عرض برای زیبایی */
+  position: relative;
+  margin: 50px auto 0;
+  width: 60%;
+  max-width: 800px;
   padding: 20px;
   background: linear-gradient(
     135deg,
     #f8f9fa,
     #e9ecef
   ); /* پس‌زمینه با گرادینت ملایم */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای برجسته‌کردن */
-  border-radius: 12px; /* لبه‌های گرد */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
   box-sizing: border-box;
 }
 
 .recipe-title h3 {
-  font-size: 2rem; /* افزایش سایز فونت برای دسکتاپ */
+  font-size: 2rem;
   text-align: center;
-  color: #495057; /* رنگ تیره‌تر برای عنوان */
+  color: #495057;
   margin-bottom: 20px;
-  border-bottom: 2px solid #6c757d; /* خط زیرین برای تاکید */
+  border-bottom: 2px solid #6c757d;
   padding-bottom: 10px;
 }
 
 .recipe-steps p {
-  font-size: 1.1rem; /* بزرگ‌تر کردن متن برای دسکتاپ */
-  color: #343a40; /* متن تیره‌تر */
+  font-size: 1.1rem;
+  color: #343a40;
   line-height: 1.8;
   margin-bottom: 15px;
   padding: 12px;
-  background-color: #ffffff; /* پس‌زمینه سفید برای متن */
-  border-radius: 8px; /* گوشه‌های گرد متن */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* سایه متن */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .recipe-steps p:nth-child(odd) {
-  background-color: #f1f3f5; /* رنگ متفاوت برای خطوط فرد */
+  background-color: #f1f3f5;
 }
 
 @media (max-width: 768px) {
   .recipe-container {
-    width: 90%; /* کاهش عرض در موبایل */
-    max-width: 100%; /* حذف محدودیت عرض */
-    margin: 20px auto; /* فاصله در بالا و پایین */
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
   }
 
   .recipe-title h3 {
-    font-size: 1.5rem; /* کوچک‌تر کردن عنوان */
+    font-size: 1.5rem;
   }
 
   .recipe-steps p {
-    font-size: 1rem; /* کوچک‌تر کردن متن */
-    padding: 10px; /* کاهش فاصله‌ها */
+    font-size: 1rem;
+    padding: 10px;
   }
 }
